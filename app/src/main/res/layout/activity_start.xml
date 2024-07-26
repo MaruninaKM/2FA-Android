@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="#29302a">
+
+
+    <View
+        android:id="@+id/start_view_big"
+        android:layout_width="252dp"
+        android:layout_height="333dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/rectan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/start_view_small"
+        android:layout_width="255dp"
+        android:layout_height="88dp"
+        android:background="@drawable/rectan"
+        app:layout_constraintBottom_toTopOf="@+id/start_view_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:id="@+id/start_lab"
+        android:layout_width="214dp"
+        android:layout_height="141dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Это приложение создано для получения одноразового кода для идентификации пользователя."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/start_view_big"
+        app:layout_constraintEnd_toEndOf="@+id/start_view_big"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/start_view_big"
+        app:layout_constraintTop_toTopOf="@+id/start_view_big"
+        app:layout_constraintVertical_bias="0.328" />
+
+    <TextView
+        android:id="@+id/start_main_lab"
+        android:layout_width="221dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:text="Authentication"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/start_view_small"
+        app:layout_constraintEnd_toEndOf="@+id/start_view_small"
+        app:layout_constraintStart_toStartOf="@+id/start_view_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="209dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#E4AC9C"
+        android:text="Получить код"
+        app:layout_constraintBottom_toBottomOf="@+id/start_view_big"
+        app:layout_constraintEnd_toEndOf="@+id/start_view_big"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/start_view_big"
+        app:layout_constraintTop_toTopOf="@+id/start_view_big"
+        app:layout_constraintVertical_bias="0.904" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

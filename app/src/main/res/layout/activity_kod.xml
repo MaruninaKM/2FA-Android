@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/kod_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#29302a"
+android:backgroundTintMode="add"
+tools:context=".KodActivity">
+
+
+    <View
+        android:id="@+id/kod_view_big"
+        android:layout_width="252dp"
+        android:layout_height="333dp"
+        android:layout_marginBottom="324dp"
+        android:background="@drawable/rectan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/kod_view_small"
+        android:layout_width="255dp"
+        android:layout_height="88dp"
+        android:background="@drawable/rectan"
+        app:layout_constraintBottom_toTopOf="@+id/kod_view_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
+
+    <TextView
+        android:id="@+id/kod_main_lab"
+        android:layout_width="221dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:text="Authentication"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kod_view_small"
+        app:layout_constraintEnd_toEndOf="@+id/kod_view_small"
+        app:layout_constraintStart_toStartOf="@+id/kod_view_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <ProgressBar
+        android:id="@+id/kod_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/kod_view_big"
+        app:layout_constraintEnd_toEndOf="@+id/kod_view_big"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/kod_view_big"
+        app:layout_constraintTop_toTopOf="@+id/kod_view_big"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <TextView
+        android:id="@+id/kod_link"
+        android:layout_width="176dp"
+        android:layout_height="64dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Вернуться"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kod_view_big" />
+
+    <TextView
+        android:id="@+id/kod_kod"
+        android:layout_width="169dp"
+        android:layout_height="69dp"
+        android:fontFamily="@font/roboto_light"
+        android:text=" "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kod_view_big"
+        app:layout_constraintEnd_toEndOf="@+id/kod_view_big"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/kod_view_big"
+        app:layout_constraintTop_toTopOf="@+id/kod_view_big"
+        app:layout_constraintVertical_bias="0.356" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

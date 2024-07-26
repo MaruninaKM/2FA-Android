@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#29302a"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/auth_view_big"
+        android:layout_width="252dp"
+        android:layout_height="333dp"
+        android:layout_marginBottom="324dp"
+        android:background="@drawable/rectan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/auth_view_small"
+        android:layout_width="255dp"
+        android:layout_height="88dp"
+        android:background="@drawable/rectan"
+        app:layout_constraintBottom_toTopOf="@+id/auth_view_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
+
+    <TextView
+        android:id="@+id/auth_lab"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Авторизируйтесь для получения кода"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/auth_view_big"
+        app:layout_constraintEnd_toEndOf="@+id/auth_view_big"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/auth_view_big"
+        app:layout_constraintTop_toTopOf="@+id/auth_view_big"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/auth_main_lab"
+        android:layout_width="221dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:text="Authentication"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/auth_view_small"
+        app:layout_constraintEnd_toEndOf="@+id/auth_view_small"
+        app:layout_constraintStart_toStartOf="@+id/auth_view_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <EditText
+        android:id="@+id/auth_log"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="#E4AC9C"
+        android:ems="10"
+        android:hint="Введите логин"
+        android:inputType="text"
+        android:textColor="#E4AC9C"
+        android:textColorHint="#E4AC9C"
+        app:layout_constraintBottom_toBottomOf="@+id/auth_view_big"
+        app:layout_constraintEnd_toEndOf="@+id/auth_view_big"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/auth_view_big"
+        app:layout_constraintTop_toTopOf="@+id/auth_view_big"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <Button
+        android:id="@+id/auth_button"
+        android:layout_width="209dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#E4AC9C"
+        android:text="Войти"
+        app:layout_constraintBottom_toBottomOf="@+id/auth_view_big"
+        app:layout_constraintEnd_toEndOf="@+id/auth_view_big"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/auth_view_big"
+        app:layout_constraintTop_toTopOf="@+id/auth_view_big"
+        app:layout_constraintVertical_bias="0.904" />
+
+    <EditText
+        android:id="@+id/auth_pas"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="#E4AC9C"
+        android:ems="10"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:textColor="#E4AC9C"
+        android:textColorHint="#E4AC9C"
+        app:layout_constraintBottom_toBottomOf="@+id/auth_view_big"
+        app:layout_constraintEnd_toEndOf="@+id/auth_view_big"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/auth_view_big"
+        app:layout_constraintTop_toTopOf="@+id/auth_view_big"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <TextView
+        android:id="@+id/auth_link"
+        android:layout_width="176dp"
+        android:layout_height="64dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Вернуться"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth_view_big" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
